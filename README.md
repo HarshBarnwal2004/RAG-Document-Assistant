@@ -22,15 +22,24 @@ PyPDF
 Recursive Character Text Splitter
 
 # 📂 Project Structure
-RAG_Project/
+
+```text
+RAG-Document-Assistant/
 │
-├── app.py                 # Streamlit UI
-├── rag.py                 # RAG backend
-├── create_database.py     # PDF ingestion & vector database creation
-├── chroma_db/             # Chroma vector database (generated)
-├── uploads/               # Uploaded PDF files
+├── app.py                  # Streamlit user interface
+├── rag.py                  # RAG pipeline (retrieval + LLM response generation)
+├── create_database.py      # PDF processing, chunking, embeddings, and Chroma DB creation
+├── chroma_db/              # Persistent Chroma vector database (generated automatically)
+├── uploads/                # Uploaded PDF documents
+├── requirements.txt        # Project dependencies
+├── .env                    # Environment variables (API keys)
+├── .gitignore              # Files and folders excluded from Git
+└── README.md               # Project documentation
+```
+
 
 # ⚙️ How It Works
+
 Upload a PDF document.
 The document is split into smaller chunks.
 Each chunk is converted into vector embeddings using Hugging Face.
@@ -69,45 +78,79 @@ The model generates an answer based only on the retrieved information.
 
 # 📦 Installation
 
-Clone the repository:
+## 📦 Installation
 
-git clone https://github.com/<your-username>/RAG-Document-Assistant.git
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/HarshBarnwal2004/RAG-Document-Assistant.git
 cd RAG-Document-Assistant
+```
 
-Create a virtual environment:
+### 2. Create a Virtual Environment
 
-python -m venv .venv
+```bash
+uv python -m venv .venv
+```
 
-Activate it:
+### 3. Activate the Virtual Environment
 
-Windows
+**Windows**
 
+```bash
 .venv\Scripts\activate
+```
 
-Linux/macOS
+### 4. Install Dependencies
 
-source .venv/bin/activate
-
-Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
-Create a .env file and add your API key:
+### 5. Configure Environment Variables
 
-MISTRAL_API_KEY=your_api_key_here
+Create a `.env` file in the project root and add your API keys:
+
+```env
+MISTRAL_API_KEY=your_mistral_api_key
 HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_key
+```
 
-▶️ Run the Application
+---
 
-Start the Streamlit app:
+## ▶️ Running the Application
+
+Start the Streamlit application:
+
+```bash
 streamlit run app.py
+```
 
-Open your browser and follow the on-screen instructions:
+Once the application launches in your browser:
 
-Upload a PDF.
-Build the knowledge base.
-Ask questions about the document.
+1. 📄 Upload a PDF document.
+2. 🧠 Build the knowledge base by generating embeddings.
+3. 💬 Ask questions about the uploaded document.
+4. 🤖 Receive context-aware answers generated using the RAG pipeline.
 
-├── requirements.txt
-├── .env
+---
+
+## 📌 Example Workflow
+
+```text
+Upload PDF
+      │
+      ▼
+Create Vector Database
+      │
+      ▼
+Ask a Question
+      │
+      ▼
+Retrieve Relevant Chunks
+      │
+      ▼
+Generate Answer with Mistral AI
+```
+.env
 └── README.md
