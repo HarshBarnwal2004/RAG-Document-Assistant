@@ -1,7 +1,7 @@
 # RAG-Document-Assistant
 An AI-powered Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and ask natural language questions about their content. The application retrieves the most relevant document chunks using semantic search and generates context-aware answers with a Large Language Model.
 
-# Features
+## Features
 📄 Upload and process PDF documents
 ✂️ Automatic document chunking
 🔍 Semantic search using vector embeddings
@@ -11,7 +11,7 @@ An AI-powered Retrieval-Augmented Generation (RAG) application that enables user
 🤖 Powered by Mistral LLM
 🌐 Streamlit-based user interface
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 Python
 Streamlit
 LangChain
@@ -21,7 +21,7 @@ Hugging Face Embeddings
 PyPDF
 Recursive Character Text Splitter
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 RAG-Document-Assistant/
@@ -38,7 +38,7 @@ RAG-Document-Assistant/
 ```
 
 
-# ⚙️ How It Works
+## ⚙️ How It Works
 
 Upload a PDF document.
 The document is split into smaller chunks.
@@ -49,7 +49,7 @@ Relevant chunks are retrieved using semantic search.
 The retrieved context is passed to the Mistral LLM.
 The model generates an answer based only on the retrieved information.
 
-# 🏗️ Architecture
+## 🏗️ Architecture
                 PDF Upload
                      │
                      ▼
@@ -76,7 +76,6 @@ The model generates an answer based only on the retrieved information.
                      ▼
               Generated Answer
 
-# 📦 Installation
 
 ## 📦 Installation
 
@@ -152,5 +151,12 @@ Retrieve Relevant Chunks
       ▼
 Generate Answer with Mistral AI
 ```
-.env
-└── README.md
+
+## screenshots
+
+<img width="1211" height="712" alt="image" src="https://github.com/user-attachments/assets/05ff6ab7-5925-4211-b46e-cef8d31f6b9a" />
+<img width="1825" height="765" alt="Screenshot 2026-07-03 005306" src="https://github.com/user-attachments/assets/69b31402-70d0-4fb6-a1bc-878a575da6e1" />
+<img width="1211" height="712" alt="Screenshot 2026-07-03 005335" src="https://github.com/user-attachments/assets/cc197c35-b70f-4052-96a9-e0e4ce98e62e" />
+
+
+
