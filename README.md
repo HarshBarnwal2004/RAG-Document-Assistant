@@ -154,7 +154,8 @@ Generate Answer with Mistral AI
 
 ## screenshots
 
-<img width="1211" height="712" alt="image" src="https://github.com/user-attachments/assets/05ff6ab7-5925-4211-b46e-cef8d31f6b9a" />
+<img width="1791" height="780" alt="Screenshot 2026-07-03 005158" src="https://github.com/user-attachments/assets/d809a017-daee-429e-be5f-45e220eb60e8" />
+
 <img width="1825" height="765" alt="Screenshot 2026-07-03 005306" src="https://github.com/user-attachments/assets/69b31402-70d0-4fb6-a1bc-878a575da6e1" />
 <img width="1211" height="712" alt="Screenshot 2026-07-03 005335" src="https://github.com/user-attachments/assets/cc197c35-b70f-4052-96a9-e0e4ce98e62e" />
 
